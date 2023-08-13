@@ -32,7 +32,7 @@ app.use("/img", express.static(path.join(__dirname, "public/img")));
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
-app.use(cors("https://fantastic-dasik-c57510.netlify.app/home"));
+app.use(cors("https://numb.onrender.com/"));
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "public/images");
