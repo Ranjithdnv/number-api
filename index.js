@@ -5,12 +5,17 @@ const dotenv = require("dotenv");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const multer = require("multer");
-
+const dotenv = require("dotenv");
 const postRoute = require("./routes/posts");
 
 const router = express.Router();
 const path = require("path");
 const cors = require("cors");
+const bodyParser = require('body-parser');
+
+// middlewares
+app.use(express.json());
+ app.use(bodyParser.urlencoded({extended:false}));
 dotenv.config();
 db =
   "mongodb+srv://pavankumarmoka:3ccG3rpxQoWOGEJl@expresscluster.gfleory.mongodb.net/mydb?retryWrites=true&w=majority";
