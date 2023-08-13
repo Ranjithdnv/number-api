@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const multer = require("multer");
-const dotenv = require("dotenv");
+
 const postRoute = require("./routes/posts");
 
 const router = express.Router();
