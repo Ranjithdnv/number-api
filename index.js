@@ -28,7 +28,7 @@ mongoose.connect(
 );
 app.use("/img", express.static(path.join(__dirname, "public/img")));
 
-//middleware
+//middleware  https://nubapi.onrender.com/img/bleach.jpg
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
@@ -56,3 +56,4 @@ app.use("/api/posts", postRoute);
 app.listen(8800, () => {
   console.log("Backend server is running!");
 });
+ 
